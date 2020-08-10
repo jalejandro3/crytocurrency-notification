@@ -44,6 +44,8 @@ def main():
             post_ifttt_webhook('bitcoin_price_update', format_bitcoin_history(bitcoin_history))
             bitcoin_history = []
 
+        time.sleep(60 * 60)
+
 
 if __name__ == '__main__':
     main()
